@@ -5,5 +5,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class EventDTO(
     val name: String,
-    val images: List<ImageDTO>
+    val images: List<ImageDTO>,
+    val priceRanges: List<PriceRangeDTO>?,
+    val dates: DatesDTO
 )

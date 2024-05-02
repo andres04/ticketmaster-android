@@ -63,7 +63,6 @@ dependencies {
     implementation("io.insert-koin:koin-core-coroutines")
     implementation("io.insert-koin:koin-ktor")
     implementation("io.insert-koin:koin-logger-slf4j")
-    implementation("com.google.code.gson:gson:2.10.1")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

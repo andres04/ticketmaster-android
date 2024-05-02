@@ -9,6 +9,6 @@ fun ImageDTO.toDomain() = Image(
     url = url,
     width = width,
     height = height,
-    fallback = fallback
-
+    fallback = fallback,
+    ratio = ratio
 )

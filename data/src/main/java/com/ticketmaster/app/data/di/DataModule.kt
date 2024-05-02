@@ -28,6 +28,7 @@ val dataModule = module {
         HttpClient(CIO){
             install(ContentNegotiation){
                 json(Json {
+                    explicitNulls = false
                     prettyPrint = true
                     isLenient = true
                     ignoreUnknownKeys = true

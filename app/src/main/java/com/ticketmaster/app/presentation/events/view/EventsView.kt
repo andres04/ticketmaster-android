@@ -18,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -74,9 +75,21 @@ fun EventsScreen(events: List<EventModel>){
                         Column {
                             Text(
                                 text = eventModel.name,
-                                fontSize = 16.sp
+                                fontSize = 16.sp,
+                                fontWeight = FontWeight.Bold
+                            )
+                            Spacer(modifier = Modifier.height(8.dp))
+                            Text(
+                                text = "Dates start: "+eventModel.dateStart+" "+eventModel.timeStart,
+                                fontSize = 14.sp
+                            )
+                            Text(
+                                text = "Prices: "+eventModel.priceMin+" - "+ eventModel.priceMax,
+                                fontSize = 14.sp
                             )
                         }
+
+
                     }
                 }
                 Spacer(modifier = Modifier.height(8.dp))
